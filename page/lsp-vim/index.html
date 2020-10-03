@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -8,12 +6,16 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Language Server Protocol Support for Emacs">
+      
       
         <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-vim/">
       
       
+        <meta name="author" content="ercdll1337@gmail.com">
+      
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.0">
     
     
       
@@ -21,13 +23,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d877a71.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.17bd0b03.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -50,9 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
-  
     
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -142,8 +153,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
           
@@ -213,6 +222,19 @@
       
         <a href="../CHANGELOG/" class="md-tabs__link">
           Changelog
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/CPP-guide/" class="md-tabs__link">
+          Tutorials
         </a>
       
     </li>
@@ -1151,6 +1173,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-prolog/" title="Prolog" class="md-nav__link">
+      Prolog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../lsp-purescript/" title="PureScript" class="md-nav__link">
       PureScript
     </a>
@@ -1453,6 +1487,26 @@
     Available configurations
   </a>
   
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-vim-executable" class="md-nav__link">
+    lsp-clients-vim-executable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-vim-initialization-options" class="md-nav__link">
+    lsp-clients-vim-initialization-options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1627,11 +1681,61 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/CPP-guide/" title="Configuring Emacs a C/C++ IDE" class="md-nav__link">
+      Configuring Emacs a C/C++ IDE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/how-to-turn-off/" title="A guide on disabling/enabling lsp-mode features" class="md-nav__link">
+      A guide on disabling/enabling lsp-mode features
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
       Blog
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Blog" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         Blog
       </label>
@@ -1645,14 +1749,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
     
-    <label class="md-nav__link" for="nav-6-1">
+    <label class="md-nav__link" for="nav-7-1">
       2020
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="2020" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-1">
+      <label class="md-nav__title" for="nav-7-1">
         <span class="md-nav__icon md-icon"></span>
         2020
       </label>
@@ -1688,14 +1792,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       Support us
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Support us" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         <span class="md-nav__icon md-icon"></span>
         Support us
       </label>
@@ -1774,6 +1878,26 @@
     Available configurations
   </a>
   
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-vim-executable" class="md-nav__link">
+    lsp-clients-vim-executable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-vim-initialization-options" class="md-nav__link">
+    lsp-clients-vim-initialization-options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1793,9 +1917,6 @@
                   </a>
                 
                 
-                  
-                
-                
                 <h1 id="vimscript">Vimscript<a class="headerlink" href="#vimscript" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
 <p>For information about the LSP server, check the <a href="https://github.com/iamcco/vim-language-server">vim-language-server</a>.</p>
@@ -1803,6 +1924,14 @@
 <p><code>npm install -g vim-language-server</code></p>
 <h3 id="debugger-na">Debugger: n/a<a class="headerlink" href="#debugger-na" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-clients-vim-executable"><code>lsp-clients-vim-executable</code><a class="headerlink" href="#lsp-clients-vim-executable" title="Permanent link">#</a></h3>
+<p><em>Default: <code>(vim-language-server --stdio)</code></em></p>
+<p>Command to start the vim language server.</p>
+<hr />
+<h3 id="lsp-clients-vim-initialization-options"><code>lsp-clients-vim-initialization-options</code><a class="headerlink" href="#lsp-clients-vim-initialization-options" title="Permanent link">#</a></h3>
+<p><em>Default: <code>((iskeyword . vim iskeyword option) (vimruntime . /usr/bin/vim) (runtimepath . /usr/bin/vim) (diagnostic (enable . t)) (indexes (runtimepath . t) (gap . 100) (count . 3)) (suggest (fromVimruntime . t) (fromRuntimepath . :json-false)))</code></em></p>
+<p>Initialization options for vim language server.</p>
+<hr />
                 
                   
                     
@@ -1811,7 +1940,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 8, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2020</span>
     
   </small>
 </div>
@@ -1913,15 +2042,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.c6483021.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e2f7d7a4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../..",
-          features: ["tabs"],
+          features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../assets/javascripts/worker/search.cbc634e2.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

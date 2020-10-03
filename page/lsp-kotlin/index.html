@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -8,12 +6,16 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Language Server Protocol Support for Emacs">
+      
       
         <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-kotlin/">
       
       
+        <meta name="author" content="ercdll1337@gmail.com">
+      
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.0">
     
     
       
@@ -21,13 +23,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d877a71.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.17bd0b03.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -50,9 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
-  
     
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -142,8 +153,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
           
@@ -213,6 +222,19 @@
       
         <a href="../CHANGELOG/" class="md-tabs__link">
           Changelog
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/CPP-guide/" class="md-tabs__link">
+          Tutorials
         </a>
       
     </li>
@@ -1069,6 +1091,75 @@
     Available configurations
   </a>
   
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-kotlin-server-executable" class="md-nav__link">
+    lsp-clients-kotlin-server-executable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-trace-server" class="md-nav__link">
+    lsp-kotlin-trace-server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-compiler-jvm-target" class="md-nav__link">
+    lsp-kotlin-compiler-jvm-target
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-linting-debounce-time" class="md-nav__link">
+    lsp-kotlin-linting-debounce-time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-completion-snippets-enabled" class="md-nav__link">
+    lsp-kotlin-completion-snippets-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-debug-adapter-enabled" class="md-nav__link">
+    lsp-kotlin-debug-adapter-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-debug-adapter-path" class="md-nav__link">
+    lsp-kotlin-debug-adapter-path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-external-sources-use-kls-scheme" class="md-nav__link">
+    lsp-kotlin-external-sources-use-kls-scheme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-external-sources-auto-convert-to-kotlin" class="md-nav__link">
+    lsp-kotlin-external-sources-auto-convert-to-kotlin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1206,6 +1297,18 @@
   <li class="md-nav__item">
     <a href="../lsp-pwsh/" title="Powershell" class="md-nav__link">
       Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-prolog/" title="Prolog" class="md-nav__link">
+      Prolog
     </a>
   </li>
 
@@ -1627,11 +1730,61 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/CPP-guide/" title="Configuring Emacs a C/C++ IDE" class="md-nav__link">
+      Configuring Emacs a C/C++ IDE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/how-to-turn-off/" title="A guide on disabling/enabling lsp-mode features" class="md-nav__link">
+      A guide on disabling/enabling lsp-mode features
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
       Blog
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Blog" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         Blog
       </label>
@@ -1645,14 +1798,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
     
-    <label class="md-nav__link" for="nav-6-1">
+    <label class="md-nav__link" for="nav-7-1">
       2020
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="2020" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-1">
+      <label class="md-nav__title" for="nav-7-1">
         <span class="md-nav__icon md-icon"></span>
         2020
       </label>
@@ -1688,14 +1841,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       Support us
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Support us" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         <span class="md-nav__icon md-icon"></span>
         Support us
       </label>
@@ -1774,6 +1927,75 @@
     Available configurations
   </a>
   
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-kotlin-server-executable" class="md-nav__link">
+    lsp-clients-kotlin-server-executable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-trace-server" class="md-nav__link">
+    lsp-kotlin-trace-server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-compiler-jvm-target" class="md-nav__link">
+    lsp-kotlin-compiler-jvm-target
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-linting-debounce-time" class="md-nav__link">
+    lsp-kotlin-linting-debounce-time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-completion-snippets-enabled" class="md-nav__link">
+    lsp-kotlin-completion-snippets-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-debug-adapter-enabled" class="md-nav__link">
+    lsp-kotlin-debug-adapter-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-debug-adapter-path" class="md-nav__link">
+    lsp-kotlin-debug-adapter-path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-external-sources-use-kls-scheme" class="md-nav__link">
+    lsp-kotlin-external-sources-use-kls-scheme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-external-sources-auto-convert-to-kotlin" class="md-nav__link">
+    lsp-kotlin-external-sources-auto-convert-to-kotlin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1793,9 +2015,6 @@
                   </a>
                 
                 
-                  
-                
-                
                 <h1 id="kotlin">Kotlin<a class="headerlink" href="#kotlin" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
 <p>For information about the LSP server, check the <a href="https://github.com/fwcd/KotlinLanguageServer">kotlin-language-server</a>.</p>
@@ -1803,6 +2022,45 @@
 <p>For more instructions on how to install, check <a href="https://github.com/fwcd/kotlin-language-server/blob/master/BUILDING.md">here</a>.</p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-clients-kotlin-server-executable"><code>lsp-clients-kotlin-server-executable</code><a class="headerlink" href="#lsp-clients-kotlin-server-executable" title="Permanent link">#</a></h3>
+<p><em>Default: <code>kotlin-language-server</code></em></p>
+<p>The kotlin-language-server executable to use.
+Leave as just the executable name to use the default behavior of finding the
+executable with ‘exec-path’.</p>
+<hr />
+<h3 id="lsp-kotlin-trace-server"><code>lsp-kotlin-trace-server</code><a class="headerlink" href="#lsp-kotlin-trace-server" title="Permanent link">#</a></h3>
+<p><em>Default: <code>off</code></em></p>
+<p>Traces the communication between VSCode and the Kotlin language server.</p>
+<hr />
+<h3 id="lsp-kotlin-compiler-jvm-target"><code>lsp-kotlin-compiler-jvm-target</code><a class="headerlink" href="#lsp-kotlin-compiler-jvm-target" title="Permanent link">#</a></h3>
+<p><em>Default: <code>1.8</code></em></p>
+<p>Specifies the JVM target, e.g. "1.6" or "1.8"</p>
+<hr />
+<h3 id="lsp-kotlin-linting-debounce-time"><code>lsp-kotlin-linting-debounce-time</code><a class="headerlink" href="#lsp-kotlin-linting-debounce-time" title="Permanent link">#</a></h3>
+<p><em>Default: <code>250</code></em></p>
+<p>[DEBUG] Specifies the debounce time limit. Lower to increase
+responsiveness at the cost of possible stability issues.</p>
+<hr />
+<h3 id="lsp-kotlin-completion-snippets-enabled"><code>lsp-kotlin-completion-snippets-enabled</code><a class="headerlink" href="#lsp-kotlin-completion-snippets-enabled" title="Permanent link">#</a></h3>
+<p><em>Default: <code>t</code></em></p>
+<p>Specifies whether code completion should provide snippets (true) or plain-text items (false).</p>
+<hr />
+<h3 id="lsp-kotlin-debug-adapter-enabled"><code>lsp-kotlin-debug-adapter-enabled</code><a class="headerlink" href="#lsp-kotlin-debug-adapter-enabled" title="Permanent link">#</a></h3>
+<p><em>Default: <code>t</code></em></p>
+<p>[Recommended] Specifies whether the debug adapter should be used. When enabled a debugger for Kotlin will be available.</p>
+<hr />
+<h3 id="lsp-kotlin-debug-adapter-path"><code>lsp-kotlin-debug-adapter-path</code><a class="headerlink" href="#lsp-kotlin-debug-adapter-path" title="Permanent link">#</a></h3>
+<p><em>Default: ``</em></p>
+<p>Optionally a custom path to the debug adapter executable.</p>
+<hr />
+<h3 id="lsp-kotlin-external-sources-use-kls-scheme"><code>lsp-kotlin-external-sources-use-kls-scheme</code><a class="headerlink" href="#lsp-kotlin-external-sources-use-kls-scheme" title="Permanent link">#</a></h3>
+<p><em>Default: <code>t</code></em></p>
+<p>[Recommended] Specifies whether URIs inside JARs should be represented using the ’kls’-scheme.</p>
+<hr />
+<h3 id="lsp-kotlin-external-sources-auto-convert-to-kotlin"><code>lsp-kotlin-external-sources-auto-convert-to-kotlin</code><a class="headerlink" href="#lsp-kotlin-external-sources-auto-convert-to-kotlin" title="Permanent link">#</a></h3>
+<p><em>Default: <code>t</code></em></p>
+<p>Specifies whether decompiled/external classes should be auto-converted to Kotlin.</p>
+<hr />
                 
                   
                     
@@ -1811,7 +2069,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 8, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2020</span>
     
   </small>
 </div>
@@ -1913,15 +2171,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.c6483021.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e2f7d7a4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../..",
-          features: ["tabs"],
+          features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../assets/javascripts/worker/search.cbc634e2.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

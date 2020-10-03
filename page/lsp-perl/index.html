@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -8,12 +6,16 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Language Server Protocol Support for Emacs">
+      
       
         <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-perl/">
       
       
+        <meta name="author" content="ercdll1337@gmail.com">
+      
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.0">
     
     
       
@@ -21,13 +23,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d877a71.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.17bd0b03.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -50,9 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
-  
     
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -142,8 +153,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
           
@@ -213,6 +222,19 @@
       
         <a href="../CHANGELOG/" class="md-tabs__link">
           Changelog
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/CPP-guide/" class="md-tabs__link">
+          Tutorials
         </a>
       
     </li>
@@ -1153,6 +1175,61 @@
     Available configurations
   </a>
   
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-language-server-path" class="md-nav__link">
+    lsp-perl-language-server-path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-language-server-port" class="md-nav__link">
+    lsp-perl-language-server-port
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-language-server-client-version" class="md-nav__link">
+    lsp-perl-language-server-client-version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-perl-cmd" class="md-nav__link">
+    lsp-perl-perl-cmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-perl-inc" class="md-nav__link">
+    lsp-perl-perl-inc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-file-filter" class="md-nav__link">
+    lsp-perl-file-filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-ignore-dirs" class="md-nav__link">
+    lsp-perl-ignore-dirs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1206,6 +1283,18 @@
   <li class="md-nav__item">
     <a href="../lsp-pwsh/" title="Powershell" class="md-nav__link">
       Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-prolog/" title="Prolog" class="md-nav__link">
+      Prolog
     </a>
   </li>
 
@@ -1627,11 +1716,61 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/CPP-guide/" title="Configuring Emacs a C/C++ IDE" class="md-nav__link">
+      Configuring Emacs a C/C++ IDE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/how-to-turn-off/" title="A guide on disabling/enabling lsp-mode features" class="md-nav__link">
+      A guide on disabling/enabling lsp-mode features
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
       Blog
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Blog" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         Blog
       </label>
@@ -1645,14 +1784,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
     
-    <label class="md-nav__link" for="nav-6-1">
+    <label class="md-nav__link" for="nav-7-1">
       2020
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="2020" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-1">
+      <label class="md-nav__title" for="nav-7-1">
         <span class="md-nav__icon md-icon"></span>
         2020
       </label>
@@ -1688,14 +1827,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       Support us
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Support us" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         <span class="md-nav__icon md-icon"></span>
         Support us
       </label>
@@ -1774,6 +1913,61 @@
     Available configurations
   </a>
   
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-language-server-path" class="md-nav__link">
+    lsp-perl-language-server-path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-language-server-port" class="md-nav__link">
+    lsp-perl-language-server-port
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-language-server-client-version" class="md-nav__link">
+    lsp-perl-language-server-client-version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-perl-cmd" class="md-nav__link">
+    lsp-perl-perl-cmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-perl-inc" class="md-nav__link">
+    lsp-perl-perl-inc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-file-filter" class="md-nav__link">
+    lsp-perl-file-filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-perl-ignore-dirs" class="md-nav__link">
+    lsp-perl-ignore-dirs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1793,9 +1987,6 @@
                   </a>
                 
                 
-                  
-                
-                
                 <h1 id="perl">Perl<a class="headerlink" href="#perl" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
 <p>For information about the LSP server, check the <a href="https://github.com/richterger/Perl-LanguageServer">Perl::LanguageServer</a>.</p>
@@ -1803,6 +1994,34 @@
 <p><code>cpan Perl::LanguageServer</code></p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-perl-language-server-path"><code>lsp-perl-language-server-path</code><a class="headerlink" href="#lsp-perl-language-server-path" title="Permanent link">#</a></h3>
+<p><em>Default: <code>perl</code></em></p>
+<p>Path to perl interpreter.</p>
+<hr />
+<h3 id="lsp-perl-language-server-port"><code>lsp-perl-language-server-port</code><a class="headerlink" href="#lsp-perl-language-server-port" title="Permanent link">#</a></h3>
+<p><em>Default: <code>13603</code></em></p>
+<p>Choose listen port.</p>
+<hr />
+<h3 id="lsp-perl-language-server-client-version"><code>lsp-perl-language-server-client-version</code><a class="headerlink" href="#lsp-perl-language-server-client-version" title="Permanent link">#</a></h3>
+<p><em>Default: <code>2.1.0</code></em></p>
+<p>Choose client version.</p>
+<hr />
+<h3 id="lsp-perl-perl-cmd"><code>lsp-perl-perl-cmd</code><a class="headerlink" href="#lsp-perl-perl-cmd" title="Permanent link">#</a></h3>
+<p><em>Default: <code>nil</code></em></p>
+<p>Path to perl interpreter used in Perl Language Server.  Defaults to ‘perl’ if nil.</p>
+<hr />
+<h3 id="lsp-perl-perl-inc"><code>lsp-perl-perl-inc</code><a class="headerlink" href="#lsp-perl-perl-inc" title="Permanent link">#</a></h3>
+<p><em>Default: <code>nil</code></em></p>
+<p>A vector of paths to add to perl library path.</p>
+<hr />
+<h3 id="lsp-perl-file-filter"><code>lsp-perl-file-filter</code><a class="headerlink" href="#lsp-perl-file-filter" title="Permanent link">#</a></h3>
+<p><em>Default: <code>nil</code></em></p>
+<p>A vector of directories filtering perl file.  Defaults to ‘[".pm" ".pl"]’ if nil.</p>
+<hr />
+<h3 id="lsp-perl-ignore-dirs"><code>lsp-perl-ignore-dirs</code><a class="headerlink" href="#lsp-perl-ignore-dirs" title="Permanent link">#</a></h3>
+<p><em>Default: <code>nil</code></em></p>
+<p>A vector of directories to ignore.  Defaults to ‘[".vscode" ".git" ".svn"]’ if nil.</p>
+<hr />
                 
                   
                     
@@ -1811,7 +2030,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 8, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2020</span>
     
   </small>
 </div>
@@ -1913,15 +2132,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.c6483021.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e2f7d7a4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../..",
-          features: ["tabs"],
+          features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../assets/javascripts/worker/search.cbc634e2.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
